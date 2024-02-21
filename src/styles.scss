@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+h1, body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+div.todo-items > *{
+  margin: 10px;
+}
+.todo-input{
+  margin-bottom: 20px;
+}
+.todo-items {
+  display: inline-flex;
+}
