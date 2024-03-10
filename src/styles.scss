@@ -11,5 +11,6 @@ div.todo-items > *{
   margin-bottom: 20px;
 }
 .todo-items {
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
 }

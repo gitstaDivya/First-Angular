@@ -9,10 +9,10 @@
   <button class="add-todo" (click)="addTodo()">Add</button>
 </form>
 <div class="todos" *ngFor="let item of todosArray; let i=index;" class="todo {{item.completed ? 'done' : ''}}">
-  <div class="todo-items">
+  <ng-container class="todo-items">
     <div class="id">{{i+1}}</div>
     <div class="content">{{item.content}}</div>
     <input type="checkbox" class="checkbox" name="checkbox" (click)="toggleDone(i)">
     <button class="remove" (click)="deleteTodo(i)">Remove Item</button>
-  </div>
+  </ng-container>
 </div>
